@@ -1,7 +1,10 @@
-
+import PracticeReact from './PracticeReact';
 function App() {
   return (
-   <h1> Hi, Myname is HAPPY YADAV</h1>
+   <>
+    <PracticeReact />
+    <a href="https://www.happyrao.tech">Click here</a>
+   </>
   );
 }
 
