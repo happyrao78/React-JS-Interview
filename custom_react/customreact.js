@@ -16,7 +16,7 @@ const customrender =(reactelement,container)=>{
      container.appendChild(domElement)
 }
 
-const reactElement={
+const reactElement={//created a react element object
     type:'a',
     props:{
         href: 'https://www.happyrao.tech',

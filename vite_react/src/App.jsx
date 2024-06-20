@@ -2,12 +2,15 @@
 import Practice from './practice'
 
 function App() {
-  
+  //declaring a variable
+  const username = "happy yadav".toLocaleUpperCase()
+
+
 
   return (
-    <> // react fragmeent to wrrap multiple elements
-    <h1>Hello, I am Happy Yadav!!!</h1>
-    < Practice />
+    <>
+      <h1>Hello, I am {username}!!!</h1>
+      < Practice />
     </>
   )
 }
