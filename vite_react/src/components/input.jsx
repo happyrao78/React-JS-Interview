@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 const Input = () => {
     const [text,setText]=useState('')
+    const [age,setAge]=useState(18)
 
     const handleChange=(e)=>{
         setText(e.target.value)
@@ -12,9 +13,11 @@ const Input = () => {
         <input 
             value={text}
             onChange={handleChange}
-            placeholder='enter text'
+            placeholder='enter name'
         />
-        <p>Your text here:{text}</p>
+        <button onClick={()=> setAge(age+1)}>Increase</button>
+        <p>Name:{text}</p>
+        <p>Age:{age}</p>
     </>
   )
 }
