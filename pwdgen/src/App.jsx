@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect, useRef } from 'react'
 import './App.css'
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Tilt } from 'react-tilt';
+// import { Tilt } from 'react-tilt';
 
 function App() {
   const [length, setLength] = useState(8); // sets the default length of password as 8
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <>
-      <Tilt>
+      
         <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 py-10 text-orange-600 bg-gray-800 font-bold md:max-w-lg lg:max-w-xl'>
           <h1 className='text-white text-center my-3 text-xl md:text-2xl'>Password Generator</h1>
           <div className='flex shadow rounded-lg overflow-hidden mb-4'>
@@ -100,7 +100,7 @@ function App() {
             </div>
           </div>
         </div>
-      </Tilt>
+      
       <ToastContainer />
     </>
   );
