@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-tilt": "^1.0.2",
     "react-tilty": "^3.0.0",
     "react-toastify": "^10.0.5"
   },
