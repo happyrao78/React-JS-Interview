@@ -7,12 +7,18 @@ function App() {
   let [value,setValue]= useState(0)
   // let value =10;
 const addValue = ()=>{
-  if(value >= 20){
+  if(value >= 36){
     alert('Cannot increase value more than 20')
   }
   else{
-  value = value + 1;
-  setValue(value);
+  // value = value + 1;
+  setValue(prevValue => prevValue+1);//prevValue is the previous value of the state and  it is used to update the state and  it is  a callback function
+  setValue(prevValue => prevValue+1);
+  setValue(prevValue => prevValue+1);
+  setValue(prevValue => prevValue+1);
+  setValue(prevValue => prevValue+1);
+  setValue(prevValue => prevValue+1);
+
   }
   // console.log(`Value is ${value}`);
 }
