@@ -6,7 +6,7 @@ function Layout() {
   return (
     <>
         <Header />
-        <Outlet />//this outlet component keeps the header and footer fixed for all the pages.
+        <Outlet />
         <Footer />
     </>
   )

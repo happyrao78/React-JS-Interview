@@ -31,15 +31,14 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements } from 'r
 
 //   }
 // ])
-//this is easier
+//this is easier as nesting is easily visible 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
-      <Route loader={githubInfoLoader} path="github" element={<Github />} />//api can be called over here only
-
+      <Route loader={githubInfoLoader} path="github" element={<Github />} />
       <Route path="user/:userid" element={<User />} />
     </Route>
   )
