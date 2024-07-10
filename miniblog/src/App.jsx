@@ -5,8 +5,8 @@ function App() {
 
   return (
     <> 
-      <h1>A blog app using appwrite</h1>
-    </>
+   <h1>Hello Happy</h1>
+     </>
   ) 
 }
 
