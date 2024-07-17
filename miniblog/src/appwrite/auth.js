@@ -26,23 +26,23 @@ export class AuthService {
             throw error;
         }
     }
-    async verifyAccount({ email, password }) {
-        try {
-            const verification = await this.account.createVerification(email)
-            if (verification) {
-                console.log("VERIFICATION SUCCESSFUL!!!")
-                return this.login({ email, password })
-            }
-            else {
-                console.log("VERIFICATION FAILED!!!")
-            }
-        } catch (error) {
-            throw error;
-        }
-    }
+    // async verifyAccount({ email, password }) {
+    //     try {
+    //         const verification = await this.account.createVerification(email)
+    //         if (verification) {
+    //             console.log("VERIFICATION SUCCESSFUL!!!")
+    //             return this.login({ email, password })
+    //         }
+    //         else {
+    //             console.log("VERIFICATION FAILED!!!")
+    //         }
+    //     } catch (error) {
+    //         throw error;
+    //     }
+    // }
     async login({ email, password }) {
         try {
-            return await this.account.createEmailSession(email, password);
+            return await this.account.createEmailPasswordSession(email, password);
 
         } catch (error) {
             throw error;
