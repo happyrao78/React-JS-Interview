@@ -1,0 +1,33 @@
+/* src/App.css */
+.color-empty {
+  fill: #ebedf0;
+  transition: fill 0.3s;
+}
+
+.color-github-1 {
+  fill: #9be9a8;
+  transition: fill 0.3s;
+}
+
+.color-github-2 {
+  fill: #40c463;
+  transition: fill 0.3s;
+}
+
+.color-github-3 {
+  fill: #30a14e;
+  transition: fill 0.3s;
+}
+
+.color-github-4 {
+  fill: #216e39;
+  transition: fill 0.3s;
+}
+
+.color-empty:hover,
+.color-github-1:hover,
+.color-github-2:hover,
+.color-github-3:hover,
+.color-github-4:hover {
+  fill-opacity: 0.75;
+}
